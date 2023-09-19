@@ -3,15 +3,14 @@ import {
   ChakraProvider,
   Box,
   Heading,
-  Text,
-  Link,
   VStack,
-  Code,
   Grid,
   theme,
 } from '@chakra-ui/react';
 import { ColorModeSwitcher } from './ColorModeSwitcher';
 import { Logo } from './Logo';
+
+import { Indicator } from './components/Indicator/Indicator';
 
 function App() {
   return (
@@ -21,9 +20,7 @@ function App() {
           <ColorModeSwitcher justifySelf="flex-end" />
           <VStack spacing={8}>
             <Heading>DISTANCIA</Heading>
-            <Text fontSize='10rem' color='tomato'>
-              200
-            </Text>
+            <Indicator />
             <Logo h="40vmin" pointerEvents="none" />
           </VStack>
         </Grid>
